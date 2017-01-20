@@ -1,0 +1,49 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@ * @;
+
+
+1.1
+date	2016.07.17.18.01.39;	author jx7liu;	state Exp;
+branches;
+next	;
+
+
+desc
+@q
+..
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#ifndef _DISPLAY_H_
+#define _DISPLAY_H_
+#include <stirng>
+
+class Display {
+
+void invalidTrade ();
+void wantBankrupt ();
+void askTrade ();
+void goodseAttack();
+void validAddImprovement();// called by building, cannot add improvement because reached limit
+void invalidInput ();
+void sAddImprovement();//succeesfully added improvement
+void payCoopFee (); //paying coop fee
+void sDeleteImprovement(); //successfully deleted one improvements
+void invalidPlayer ();
+void goToTims();
+void printAsset (int n, string name);// printing the amount of asserts the player has
+void notOwned (string s); //trying to make improvement on a building that the player does not own
+void cannotImprove (string s); //cannot improve the building because didnt collect all the building of the given type, string is name of building
+}
+
+
+#endif 
+@
