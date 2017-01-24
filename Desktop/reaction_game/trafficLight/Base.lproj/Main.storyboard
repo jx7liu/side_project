@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="trafficLight" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="field" translatesAutoresizingMaskIntoConstraints="NO" id="yzy-WA-JYr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFU-fj-hB0">
+                                <rect key="frame" x="9" y="438" width="357" height="47"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
+                                <color key="textColor" red="0.99450055400000004" green="1" blue="0.98369098190000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="3" height="4"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaP-d0-b1c">
+                                <rect key="frame" x="110" y="487" width="155" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FaP-d0-b1c" secondAttribute="height" multiplier="31:32" id="28c-bp-UPF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Start" backgroundImage="119498475589498995button-red_benji_park_01.svg.med-1">
+                                    <color key="titleColor" red="0.99450055400000004" green="1" blue="0.98369098190000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1CN-wu-AEl"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UXl-qH-zmT">
+                                <rect key="frame" x="0.0" y="0.0" width="660" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vlh-p7-jZP">
+                                        <rect key="frame" x="0.0" y="0.0" width="660" height="50"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DCW-nW-aVq">
+                                                <rect key="frame" x="0.0" y="0.0" width="660" height="50"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hamster3" translatesAutoresizingMaskIntoConstraints="NO" id="7kq-c2-zEz">
+                                <rect key="frame" x="274" y="446" width="85" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7kq-c2-zEz" secondAttribute="height" multiplier="85:107" id="0EB-tf-sIm"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="hamster3" translatesAutoresizingMaskIntoConstraints="NO" id="UNm-S8-xNu">
+                                <rect key="frame" x="263" y="281" width="82" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UNm-S8-xNu" secondAttribute="height" multiplier="82:105" id="TXi-9l-8ha"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="hamster3" translatesAutoresizingMaskIntoConstraints="NO" id="5V1-Ze-XM7">
+                                <rect key="frame" x="33" y="342" width="90" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5V1-Ze-XM7" secondAttribute="height" multiplier="10:11" id="6Hk-dR-jSt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fFU-fj-hB0" firstAttribute="top" secondItem="UNm-S8-xNu" secondAttribute="bottom" constant="52" id="4Gj-e9-MSa"/>
+                            <constraint firstItem="FaP-d0-b1c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="94" id="4fY-O3-Kte"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FaP-d0-b1c" secondAttribute="trailing" constant="94" id="8lh-Mb-SXJ"/>
+                            <constraint firstItem="yzy-WA-JYr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AlG-j1-L8p"/>
+                            <constraint firstItem="yzy-WA-JYr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ClY-Nv-m0J"/>
+                            <constraint firstItem="FaP-d0-b1c" firstAttribute="top" secondItem="5V1-Ze-XM7" secondAttribute="bottom" constant="46" id="Cqx-Th-gh0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7kq-c2-zEz" secondAttribute="bottom" constant="114" id="EFG-dx-pFn"/>
+                            <constraint firstItem="UNm-S8-xNu" firstAttribute="leading" secondItem="5V1-Ze-XM7" secondAttribute="trailing" constant="140" id="GCr-B7-RMm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FaP-d0-b1c" secondAttribute="bottom" constant="20" id="I40-2p-OdW"/>
+                            <constraint firstItem="UNm-S8-xNu" firstAttribute="top" secondItem="UXl-qH-zmT" secondAttribute="bottom" constant="249" id="JoT-R2-j1D"/>
+                            <constraint firstItem="5V1-Ze-XM7" firstAttribute="top" secondItem="UXl-qH-zmT" secondAttribute="bottom" constant="292" id="KM4-I6-epf"/>
+                            <constraint firstItem="UNm-S8-xNu" firstAttribute="leading" secondItem="5V1-Ze-XM7" secondAttribute="trailing" constant="140" id="M0b-A8-Psv"/>
+                            <constraint firstItem="fFU-fj-hB0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="9" id="W4c-kh-Ugm"/>
+                            <constraint firstAttribute="trailing" secondItem="yzy-WA-JYr" secondAttribute="trailing" id="Zve-mb-3DP"/>
+                            <constraint firstItem="7kq-c2-zEz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="avk-Bi-qih"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yzy-WA-JYr" secondAttribute="bottom" id="doT-hf-3Bx"/>
+                            <constraint firstItem="FaP-d0-b1c" firstAttribute="top" secondItem="5V1-Ze-XM7" secondAttribute="bottom" constant="46" id="fpM-0k-nfu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UNm-S8-xNu" secondAttribute="trailing" constant="20" id="l3F-36-NUs"/>
+                            <constraint firstItem="5V1-Ze-XM7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="p0I-DJ-jXu"/>
+                            <constraint firstAttribute="trailing" secondItem="fFU-fj-hB0" secondAttribute="trailing" constant="9" id="tb2-Qv-rHs"/>
+                            <constraint firstItem="7kq-c2-zEz" firstAttribute="leading" secondItem="FaP-d0-b1c" secondAttribute="trailing" constant="9" id="wSd-2u-Njy"/>
+                            <constraint firstItem="FaP-d0-b1c" firstAttribute="top" secondItem="fFU-fj-hB0" secondAttribute="bottom" constant="2" id="yPY-FR-rUg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="fFU-fj-hB0" id="NQp-jr-B7s"/>
+                        <outlet property="startStopBotton" destination="FaP-d0-b1c" id="Q0z-wo-N49"/>
+                        <outlet property="trafficLight" destination="UNm-S8-xNu" id="acS-ey-a3l"/>
+                        <outlet property="trafficLight1" destination="7kq-c2-zEz" id="wCz-vs-9uV"/>
+                        <outlet property="trafficLight2" destination="5V1-Ze-XM7" id="exv-0w-P52"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endless-road-1" id="0hY-0x-c7C">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </objects>
+            <point key="canvasLocation" x="912.79999999999995" y="-164.16791604197903"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="119498475589498995button-red_benji_park_01.svg.med-1" width="300" height="300"/>
+        <image name="endless-road-1" width="1280" height="720"/>
+        <image name="field" width="1300" height="862"/>
+        <image name="hamster3" width="447" height="554"/>
+    </resources>
+</document>
